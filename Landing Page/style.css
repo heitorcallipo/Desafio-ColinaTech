@@ -124,6 +124,7 @@ body {
   margin: 2em;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
 }
 
@@ -218,7 +219,7 @@ body {
 .card ul,
 .cardPlus ul {
   font-size: 1em;
-  text-align: start;
+  text-align: center;
   font-weight: 500;
 }
 
