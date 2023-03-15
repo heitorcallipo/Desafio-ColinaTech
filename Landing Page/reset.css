@@ -12,14 +12,11 @@
 html,
 body {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
 }
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #ECEBEB;
 }
 img,
 picture,

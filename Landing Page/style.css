@@ -1,12 +1,26 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .topPage {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120em;
-  height: 100vh;
+  width: 100vw;
+  height: 75vh;
+  overflow: auto;
   background-color: #61b3fb;
+  background-image: url(Images/Intersect.png);
+  background-blend-mode: multiply;
   border-radius: 0em 0em 4em 4em;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.178);
+  padding: 0;
+}
+
+.topPageContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .topPageContent h1 {
@@ -36,14 +50,14 @@
 }
 
 .topPageContent button {
-  background-color: #141E39;
+  background-color: #141e39;
   color: #ffffff;
   border-radius: 8px;
   width: 16rem;
   border: none;
   font-size: 1.2em;
   text-align: center;
-  padding: 0.5em ;
+  padding: 0.5em;
   font-weight: 700;
   position: relative;
   top: 4.5em;
@@ -51,7 +65,7 @@
 }
 
 .topPageContent button:hover {
-  background-color: #0A76D9;
+  background-color: #0a76d9;
   cursor: pointer;
   border: 1px solid #222;
 }
@@ -64,24 +78,84 @@
   padding: 2em;
 }
 
+.midPage span {
+  color: #61b3fb;
+  font-size: 1.3em;
+}
+
+.midPage p {
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 2.5em;
+}
+
+.midPage h1 {
+  font-size: 2.2em;
+}
+
 .midPage img {
-  background-color: #ffffff;
+  background-color: #ECEBEB;
   background-image: url(Images/Tenha\ sua\ casa\ sempre\ limpa\ na\ frequência\ certa.png);
   background-repeat: no-repeat;
-  background-position: 15em 3.5em;
+  background-position: 20em 4.2em;
+  width: 80em;
 }
 
 .cardsContainer {
   display: flex;
-
+  justify-content: center;
+  gap: 2em;
+  margin-top: 4em;
 }
 
 .card {
   border: 1px solid black;
-  width: 368px;
-  height: 396px;
+  width: 25em;
+  height: 28em;
   text-align: center;
   border-radius: 24px;
+  background-color: #61b3fb;
+}
+
+.cardPlus {
+  border: 1px solid black;
+  width: 25em;
+  height: 28em;
+  text-align: center;
+  border-radius: 24px;
+  background-color: #61b3fb;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: 24px 24px 0 0;
+  background-color: #0a76d9;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.cardHeader h2 {
+  padding: 1em;
+}
+
+.cardHeaderPlus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 24px 24px 0 0;
+  font-size: 15px;
+  background-color: #0a76d9;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+}
+
+.cardHeaderPlus h2 {
+  padding: 1em;
 }
 
 .card img {
@@ -94,3 +168,189 @@
   gap: 1em;
 }
 
+.card ul,
+.cardPlus ul {
+  list-style: none;
+  line-height: 19.5px;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.closeCard {
+  border: 1px solid black;
+  color: #222;
+  height: 100%;
+  font-size: 2em;
+  text-align: right;
+  border-top-right-radius: inherit;
+}
+
+.midPage button {
+  background-color: #141e39;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 16rem;
+  border: none;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.5em;
+  font-weight: 700;
+  position: relative;
+  transition: 0.6s;
+  top: 2.5em;
+}
+
+.midPage button:hover {
+  background-color: #0a76d9;
+  cursor: pointer;
+  border: 1px solid #222;
+}
+
+.thirdPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #61b3fb;
+  background-image: url(Images/Intersect.png);
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 90vh;
+  margin-top: 5em;
+  border-radius: 4em 4em 4em 4em;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.178);
+  padding: 0;
+}
+
+.thirdPage header {
+  border: 1px solid black;
+  border-radius: 2em;
+  width: 30em;
+  text-align: center;
+  background-image: url(Images/É\ fácil\ e\ prático.png);
+  background-repeat: no-repeat;
+  background-color: #0a76d9;
+  background-position: center;
+  padding: 0.5em;
+  margin: 5em;
+}
+
+.thirdPage h1 {
+  font-size: 2em;
+}
+
+.thirdPageText {
+  margin: 4em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.thirdPage button {
+  background-color: #141e39;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 16rem;
+  border: none;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.8em;
+  font-weight: 700;
+  position: relative;
+  transition: 0.6s;
+}
+
+.thirdPage button:hover {
+  background-color: #0a76d9;
+  cursor: pointer;
+  border: 1px solid #222;
+}
+
+.closePoint {
+  position: relative;
+  left: 28rem;
+  bottom: 1em;
+}
+
+.semiCircle {
+  position: relative;
+  bottom: 8em;
+  right: 40em;
+  width: 12em;
+}
+
+.afterContainer {
+  position: relative;
+  left: 46rem;
+  top: 2em;
+}
+
+.fourthPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4em 0;
+}
+
+.fourthPage header {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+
+.fourthPageText {
+  text-align: center;
+  font-size: 2em;
+  color: #0a76d9;
+}
+
+#h1ContainerFP {
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.151);
+  background-color: #0a76d9;
+  padding: 0.1em;
+  color: #f1f1f1;
+  border-radius: 10em;
+}
+
+.cardsContainerFP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardFP {
+  margin-right: 5em;
+  border: 1px solid purple;
+  width: 30em;
+  height: 10em;
+}
+
+.cardFPHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  border: 1px solid black;
+}
+
+.cardHeaderMiddleFP {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  border: 1px solid black;
+}
+
+.cardMiddleFP {
+  margin-right: 5em;
+  width: 30em;
+  height: 12em;
+  border: 1px solid black;
+}
+
+.cardFP h3,
+.cardHeaderMiddleFP h3 {
+  padding: 1em;
+}

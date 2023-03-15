@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>tidmo</title>
   </head>
   <body>
-    <main>
-      <div class="topPage">
-        <div class="topPageContent">
+    <main class="container">
+      <section class="topPage">
+        <header class="topPageContent">
           <div class="topPageText">
             <div>
               <h1>Até R$80,00 OFF</h1>
@@ -23,54 +29,165 @@
               <p>e acesse nosso site para garantir a</p>
               <p>rotina de limpeza do seu lar com um</p>
               <p><strong>super desconto.</strong></p>
+              <div class="btn"><button>Garantir meu cupom</button></div>
             </div>
           </div>
-          <div class="btn"><button>Garantir meu cupom</button></div>
-        </div>
-        <div class="topPageImage">
-          <img src="Images/imagem-hero.png" alt="tidmo cleaning lady" />
-        </div>
-      </div>
-      <div class="midPage">
-        <div class="midPagePhrase">
+          <div class="topPageImage">
+            <img src="Images/imagem-hero.png" alt="tidmo cleaning lady" />
+          </div>
+        </header>
+      </section>
+      <section class="midPage">
+        <header class="midPagePhrase">
           <img
             src="Images/after-h2-removebg-preview.png"
             alt="Tenha sua casa sempre limpa na frequência certa"
           />
-        </div>
+        </header>
         <div class="cardsContainer">
           <div class="card">
-            <h2>Assinatura Quinzenal <span><img src="Images/close vector.png" alt="close"></span></h2>
-            <ul>
-              <li>1 serviço a cada 2 semanas</li>
-              <li>Pagamento pós-pago no Cartão de Crédito</li>
-              <li>10% de desconto em todas as faxinas</li>
-              <li>Pré reserva da sua embaixadora favorita</li>
-              <li>Não possui preço dinâmico em dias de alta demanda*</li>
-            </ul>
+            <div class="cardHeader">
+              <h2>Assinatura Quinzenal</h2>
+              <div>
+                <div></div>
+              </div>
+            </div>
+            <div class="listContainer">
+              <ul>
+                <li>
+                  <img
+                    src="Images/Vector-removebg-preview.png"
+                    alt="vectoricon"
+                  />1 serviço a cada 2 semanas
+                </li>
+                <li>
+                  <img
+                    src="Images/Vector-removebg-preview.png"
+                    alt="vectoricon"
+                  />Pagamento pós-pago no Cartão de Crédito
+                </li>
+                <li>
+                  <img
+                    src="Images/Vector-removebg-preview.png"
+                    alt="vectoricon"
+                  />10% de desconto em todas as faxinas
+                </li>
+                <li>
+                  <img
+                    src="Images/Vector-removebg-preview.png"
+                    alt="vectoricon"
+                  />Pré reserva da sua embaixadora favorita
+                </li>
+                <li>
+                  <img
+                    src="Images/Vector-removebg-preview.png"
+                    alt="vectoricon"
+                  />Não possui preço dinâmico em dias de alta demanda*
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="card">
-            <h2>Assinatura Semanal <span><img src="Images/close vector.png" alt="close"></span></h2>
-            <ul>
-              <li>1 serviço por semana</li>
-              <li>Pagamento pós-pago no Cartão de Crédito</li>
-              <li>12% de desconto em todas as faxinas</li>
-              <li>Pré-reserva da sua embaixadora favorita</li>
-              <li>Não possui preço dinâmico em dias de alta demanda*</li>
-            </ul>
+            <div class="cardHeader">
+              <h2>Assinatura Semanal</h2>
+              <div></div>
+            </div>
+            <div class="listContainer">
+              <ul>
+                <li>1 serviço por semana</li>
+                <li>Pagamento pós-pago no Cartão de Crédito</li>
+                <li>12% de desconto em todas as faxinas</li>
+                <li>Pré-reserva da sua embaixadora favorita</li>
+                <li>Não possui preço dinâmico em dias de alta demanda*</li>
+              </ul>
+            </div>
           </div>
-          <div class="card">
-            <h2>Assinatura Semanal Plus <span><img src="Images/close vector.png" alt="close"></span></h2>
-            <ul>
-              <li>2 serviço por semana</li>
-              <li>Pagamento pós-pago no Cartão de Crédito</li>
-              <li>10% de desconto em todas as faxinas</li>
-              <li>Pré-reserva da sua embaixadora favorita</li>
-              <li>Não possui preço dinâmico em dias de alta demanda*</li>
-            </ul>
+          <div class="cardPlus">
+            <div class="cardHeaderPlus">
+              <h2>Assinatura Semanal Plus</h2>
+              <div>
+                <div></div>
+              </div>
+            </div>
+            <div class="listContainer">
+              <ul>
+                <li>2 serviço por semana</li>
+                <li>Pagamento pós-pago no Cartão de Crédito</li>
+                <li>10% de desconto em todas as faxinas</li>
+                <li>Pré-reserva da sua embaixadora favorita</li>
+                <li>Não possui preço dinâmico em dias de alta demanda*</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+        <p><span>*</span>Exceto nas operações de João Pessoa e São Paulo</p>
+        <h1>Escolha o plano ideal e garanta seu cupom de</h1>
+        <h1>R$80,00 de desconto no primeiro mês de assinatura!</h1>
+        <button>Garantir meu cupom</button>
+      </section>
+      <section class="thirdPage">
+        <header>
+          <img
+            src="Images/after-container.png"
+            alt="after container"
+            class="afterContainer"
+          />
+          <img
+            src="Images/b-after-h2.png"
+            alt="b-after-h2"
+            class="closePoint"
+          />
+        </header>
+        <img src="Images/Group 23.png" alt="steps to cupon" />
+        <div class="thirdPageText">
+          <h1>Aproveite nosso cupom de desconto para realizar sua</h1>
+          <h1>assinatura agora mesmo!</h1>
+        </div>
+        <div>
+          <button>Aproveitar cupom</button>
+        </div>
+        <img src="Images/circle.png" alt="semi circle" class="semiCircle" />
+      </section>
+      <section class="fourthPage">
+        <header>
+          <img
+            src="Images/estrelinhas-before.png"
+            alt="estrelinhas no circulo"
+          />
+          <div class="fourthPageText">
+            <h1>Quem assina</h1>
+            <h1 id="h1ContainerFP">não se arrepende!</h1>
+          </div>
+        </header>
+        <div class="cardsContainerFP">
+          <div class="cardFP">
+            <div class="cardFPHeader">
+              <h3>D</h3>
+              <h3>Daniele Dias</h3>
+              <img src="Images/Estrelas.png" alt="estrelas" />
+            </div>
+            <p>Excelente!</p>
+          </div>
+          <div class="cardMiddleFP">
+            <div class="cardHeaderMiddleFP">
+              <h3>M</h3>
+              <h3>Milena Castro</h3>
+              <img src="Images/Estrelas.png" alt="estrelas" />
+            </div>
+            <p>Superaram minhas expectativas, o</p>
+            <p>apartamento ficou impecável. Tenho uma</p>
+            <p>pug, então a tarefa não foi fácil, e</p>
+            <p>atenderam excepcionalmente bem!</p>
+          </div>
+          <div class="cardFP">
+            <div class="cardFPHeader">
+              <h3>L</h3>
+              <h3>Luiza Medeiros</h3>
+              <img src="Images/Estrelas.png" alt="estrelas" />
+            </div>
+            <p>Muito cuidadosa e atenta a todos os</p>
+            <p>detalhes.</p>
+      </section>
     </main>
   </body>
 </html>
