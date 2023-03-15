@@ -16,7 +16,7 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #ECEBEB;
+  background-color: rgba(211, 211, 211, 0.575);
 }
 img,
 picture,

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="script.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
       rel="stylesheet"
@@ -15,7 +16,7 @@
     <title>tidmo</title>
   </head>
   <body>
-    <main class="container">
+    <main>
       <section class="topPage">
         <header class="topPageContent">
           <div class="topPageText">
@@ -29,7 +30,7 @@
               <p>e acesse nosso site para garantir a</p>
               <p>rotina de limpeza do seu lar com um</p>
               <p><strong>super desconto.</strong></p>
-              <div class="btn"><button>Garantir meu cupom</button></div>
+              <div class="btnTP"><button><a href="https://tidmo.com.br/novo/" target="_">Garantir meu cupom</a></button></div>
             </div>
           </div>
           <div class="topPageImage">
@@ -38,10 +39,11 @@
         </header>
       </section>
       <section class="midPage">
-        <header class="midPagePhrase">
+        <header>
           <img
             src="Images/after-h2-removebg-preview.png"
             alt="Tenha sua casa sempre limpa na frequência certa"
+            id="midPagePhrase"
           />
         </header>
         <div class="cardsContainer">
@@ -49,48 +51,23 @@
             <div class="cardHeader">
               <h2>Assinatura Quinzenal</h2>
               <div>
-                <div></div>
+                <div class="X"></div>
               </div>
             </div>
             <div class="listContainer">
               <ul>
-                <li>
-                  <img
-                    src="Images/Vector-removebg-preview.png"
-                    alt="vectoricon"
-                  />1 serviço a cada 2 semanas
-                </li>
-                <li>
-                  <img
-                    src="Images/Vector-removebg-preview.png"
-                    alt="vectoricon"
-                  />Pagamento pós-pago no Cartão de Crédito
-                </li>
-                <li>
-                  <img
-                    src="Images/Vector-removebg-preview.png"
-                    alt="vectoricon"
-                  />10% de desconto em todas as faxinas
-                </li>
-                <li>
-                  <img
-                    src="Images/Vector-removebg-preview.png"
-                    alt="vectoricon"
-                  />Pré reserva da sua embaixadora favorita
-                </li>
-                <li>
-                  <img
-                    src="Images/Vector-removebg-preview.png"
-                    alt="vectoricon"
-                  />Não possui preço dinâmico em dias de alta demanda*
-                </li>
+                <li>1 serviço a cada 2 semanas</li>
+                <li>Pagamento pós-pago no Cartão de Crédito</li>
+                <li>10% de desconto em todas as faxinas</li>
+                <li>Pré reserva da sua embaixadora favorita</li>
+                <li>Não possui preço dinâmico em dias de alta demanda*</li>
               </ul>
             </div>
           </div>
           <div class="card">
             <div class="cardHeader">
               <h2>Assinatura Semanal</h2>
-              <div></div>
+              <div class="X"></div>
             </div>
             <div class="listContainer">
               <ul>
@@ -103,10 +80,10 @@
             </div>
           </div>
           <div class="cardPlus">
-            <div class="cardHeaderPlus">
+            <div class="cardHeader">
               <h2>Assinatura Semanal Plus</h2>
               <div>
-                <div></div>
+                <div class="XPlus"></div>
               </div>
             </div>
             <div class="listContainer">
@@ -123,7 +100,7 @@
         <p><span>*</span>Exceto nas operações de João Pessoa e São Paulo</p>
         <h1>Escolha o plano ideal e garanta seu cupom de</h1>
         <h1>R$80,00 de desconto no primeiro mês de assinatura!</h1>
-        <button>Garantir meu cupom</button>
+        <button class="btnMP"><a href="https://tidmo.com.br/novo/" target="_">Garantir meu cupom</a></button>
       </section>
       <section class="thirdPage">
         <header>
@@ -144,7 +121,7 @@
           <h1>assinatura agora mesmo!</h1>
         </div>
         <div>
-          <button>Aproveitar cupom</button>
+          <button class="btnTHP"><a href="https://tidmo.com.br/novo/" target="_">Aproveitar cupom</a></button>
         </div>
         <img src="Images/circle.png" alt="semi circle" class="semiCircle" />
       </section>
@@ -162,31 +139,115 @@
         <div class="cardsContainerFP">
           <div class="cardFP">
             <div class="cardFPHeader">
-              <h3>D</h3>
-              <h3>Daniele Dias</h3>
-              <img src="Images/Estrelas.png" alt="estrelas" />
+              <div class="circleContainer">
+                <h3 class="circleProfile">D</h3>
+              </div>
+              <h3 class="cardFPName">Daniele Dias</h3>
+              <img
+                src="Images/Estrelas.png"
+                alt="estrelas"
+                class="littleStars"
+              />
             </div>
-            <p>Excelente!</p>
+            <div class="cardText">
+              <p class="insideTextCard">Excelente!</p>
+              <p id="dateCardFirst">13/02/2023</p>
+            </div>
           </div>
           <div class="cardMiddleFP">
             <div class="cardHeaderMiddleFP">
-              <h3>M</h3>
-              <h3>Milena Castro</h3>
-              <img src="Images/Estrelas.png" alt="estrelas" />
+              <div class="circleContainer">
+                <h3 id="circleProfileMiddle">M</h3>
+              </div>
+              <h3 class="cardFPName">Milena Castro</h3>
+              <img
+                src="Images/Estrelas.png"
+                alt="estrelas"
+                class="littleStars"
+              />
             </div>
-            <p>Superaram minhas expectativas, o</p>
-            <p>apartamento ficou impecável. Tenho uma</p>
-            <p>pug, então a tarefa não foi fácil, e</p>
-            <p>atenderam excepcionalmente bem!</p>
+            <div class="cardText">
+              <div class="insideTextCard">
+                <p>Superaram minhas expectativas, o</p>
+                <p>apartamento ficou impecável. Tenho uma</p>
+                <p>pug, então a tarefa não foi fácil, e</p>
+                <p>atenderam excepcionalmente bem!</p>
+              </div>
+              <p id="dateCardMiddle">14/11/2022</p>
+            </div>
           </div>
           <div class="cardFP">
             <div class="cardFPHeader">
-              <h3>L</h3>
-              <h3>Luiza Medeiros</h3>
-              <img src="Images/Estrelas.png" alt="estrelas" />
+              <div class="circleContainer">
+                <h3 class="circleProfile">L</h3>
+              </div>
+              <h3 class="cardFPName">Luiza Medeiros</h3>
+              <img
+                src="Images/Estrelas.png"
+                alt="estrelas"
+                class="littleStars"
+              />
             </div>
-            <p>Muito cuidadosa e atenta a todos os</p>
-            <p>detalhes.</p>
+            <div class="cardText">
+              <div class="insideTextCard">
+                <p>Muito cuidadosa e atenta a todos os</p>
+                <p>detalhes.</p>
+              </div>
+              <p id="dateCardThird">11/02/2023</p>
+            </div>
+          </div>
+        </div>
+        <button class="btnFP"><a href="https://tidmo.com.br/novo/" target="_">Quero meu cupom</a></button>
+      </section>
+      <section id="fifthPage">
+        <aside id="leftContentFiP">
+          <div>
+            <img
+              src="Images/before-estrelinhas.png"
+              alt="estrelinhas"
+              id="estrelinhasFiP"
+            />
+            <img src="Images/b-after-h2.png" alt="close" id="closeFiP" />
+          </div>
+          <div id="topContainer">
+            <p>Aproveite a oportunidade de ter sua casa</p>
+            <p>sempre limpa com nosso plano de faxina</p>
+            <p>sem carência, sem prazo mínimo e com um</p>
+            <p>cupom de desconto especial.</p>
+          </div>
+          <div id="bottomContainer">
+            <h3>REGRAS DO CUPOM</h3>
+            <div id="firstText">
+              <p>Com nosso cupom você pode ganhar até</p>
+              <p>R$80,00 de desconto apenas no primeiro mês.</p>
+              <p>O desconto é de R$10,00 por faxina, ou seja:</p>
+            </div>
+            <div id="secondText">
+              <div>
+                <p>
+                  <strong>Assinatura quinzenal</strong>: R$20,00 de desconto
+                </p>
+                <p>no primeiro mês;</p>
+              </div>
+              <div>
+                <p><strong>Assinatura semanal</strong>: R$40,00 de desconto</p>
+                <p>no primeiro mês;</p>
+              </div>
+              <div>
+                <p><strong>Assinatura semanal plus</strong>: R$80,00 de</p>
+                <p>desconto no primeiro mês.</p>
+              </div>
+            </div>
+          </div>
+          <button class="btnFiP"><a href="https://tidmo.com.br/novo/" target="_">Realizar assinatura</a></button>
+        </aside>
+        <aside>
+          <img
+            src="Images/basket cleaning.png"
+            alt="basket Cleaning"
+            id="basketCleaning"
+          />
+        </aside>
       </section>
     </main>
   </body>

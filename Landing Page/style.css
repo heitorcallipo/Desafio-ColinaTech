@@ -17,10 +17,20 @@ body {
   padding: 0;
 }
 
+.topPageText a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
 .topPageContent {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.topPageContent img{
+  width: 40em;
+  height: 40em;
 }
 
 .topPageContent h1 {
@@ -46,6 +56,7 @@ body {
 .topPageText {
   display: flex;
   flex-direction: column;
+  font-size: 1.1em;
   gap: 1.5em;
 }
 
@@ -55,9 +66,8 @@ body {
   border-radius: 8px;
   width: 16rem;
   border: none;
-  font-size: 1.2em;
   text-align: center;
-  padding: 0.5em;
+  padding: 0.6em;
   font-weight: 700;
   position: relative;
   top: 4.5em;
@@ -78,6 +88,11 @@ body {
   padding: 2em;
 }
 
+.midPage a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
 .midPage span {
   color: #61b3fb;
   font-size: 1.3em;
@@ -93,12 +108,23 @@ body {
   font-size: 2.2em;
 }
 
-.midPage img {
-  background-color: #ECEBEB;
+#midPagePhrase {
   background-image: url(Images/Tenha\ sua\ casa\ sempre\ limpa\ na\ frequência\ certa.png);
   background-repeat: no-repeat;
-  background-position: 20em 4.2em;
+  background-position: 18em 4em;
   width: 80em;
+}
+
+.listContainer li {
+  list-style-image: url(Images/star\ list.png);
+  list-style-position: inside;
+}
+
+.listContainer ul {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .cardsContainer {
@@ -134,11 +160,32 @@ body {
   border-radius: 24px 24px 0 0;
   background-color: #0a76d9;
   color: #ffffff;
-  font-size: 14px;
 }
 
-.cardHeader h2 {
-  padding: 1em;
+.cardHeader img {
+  font-size: 1.8em;
+}
+
+.X {
+  border-left: 1px solid black;
+  height: 5.4em;
+  padding-right: 3em;
+  background-image: url(Images/close\ vector.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.XPlus {
+  border-left: 1px solid black;
+  height: 5.4em;
+  padding-right: 4em;
+  background-image: url(Images/close\ vector.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cardClose {
+  padding: 0.1em;
 }
 
 .cardHeaderPlus {
@@ -170,11 +217,9 @@ body {
 
 .card ul,
 .cardPlus ul {
-  list-style: none;
-  line-height: 19.5px;
   font-size: 1em;
-  text-align: center;
-  font-weight: bolder;
+  text-align: start;
+  font-weight: 500;
 }
 
 .closeCard {
@@ -221,6 +266,11 @@ body {
   border-radius: 4em 4em 4em 4em;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.178);
   padding: 0;
+}
+
+.thirdPage a {
+  text-decoration: none;
+  color: #f1f1f1;
 }
 
 .thirdPage header {
@@ -290,13 +340,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4em 0;
+  margin: 6em 0;
+}
+
+.fourthPage a {
+  text-decoration: none;
+  color: #f1f1f1;
 }
 
 .fourthPage header {
   display: flex;
   align-items: center;
-  gap: 5em;
+  justify-content: center;
+  margin-right: 18em;
+  gap: 7em;
 }
 
 .fourthPageText {
@@ -309,6 +366,7 @@ body {
   border: 1px solid black;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.151);
   background-color: #0a76d9;
+  width: 12em;
   padding: 0.1em;
   color: #f1f1f1;
   border-radius: 10em;
@@ -318,13 +376,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 4em;
+  margin-left: 5em;
 }
 
 .cardFP {
-  margin-right: 5em;
-  border: 1px solid purple;
+  margin-right: 3em;
+  border: 1px solid black;
+  background-color: #f1f1f1;
   width: 30em;
-  height: 10em;
+  height: 14em;
+  border-radius: 1em;
 }
 
 .cardFPHeader {
@@ -333,6 +395,8 @@ body {
   align-items: center;
   gap: 1em;
   border: 1px solid black;
+  background-color: #141e39;
+  border-radius: 1em 1em 0 0;
 }
 
 .cardHeaderMiddleFP {
@@ -341,16 +405,224 @@ body {
   align-items: center;
   gap: 1em;
   border: 1px solid black;
+  background-color: #141e39;
+  border-radius: 1em 1em 0 0;
 }
 
 .cardMiddleFP {
   margin-right: 5em;
   width: 30em;
-  height: 12em;
+  height: 16em;
   border: 1px solid black;
+  background-color: #f1f1f1;
+  border-radius: 1em;
 }
 
 .cardFP h3,
 .cardHeaderMiddleFP h3 {
-  padding: 1em;
+  padding: 1.2em;
 }
+
+.circleContainer {
+  border: none;
+  width: 4em;
+  height: 4em;
+  margin-left: 1em;
+  position: relative;
+  border-radius: 50em;
+  background-color: #61b3fb;
+}
+
+.circleProfile {
+  position: relative;
+  bottom: 1em;
+  right: 0.6em;
+  font-size: 2em;
+  color: #f1f1f1;
+}
+
+#circleProfileMiddle {
+  position: relative;
+  bottom: 1em;
+  right: 0.7em;
+  font-size: 2em;
+  color: #f1f1f1;
+}
+
+.cardFPName {
+  color: #61b3fb;
+  font-size: 1.4em;
+}
+
+.littleStars {
+  margin-right: 1em;
+  border: 1px solid black;
+  border-radius: 1em;
+  padding: 0.2em;
+  background-color: #f1f1f1;
+}
+
+.cardText {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.insideTextCard {
+  margin: 0.8em;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+#dateCardFirst {
+  position: relative;
+  top: 4em;
+  right: 1em;
+}
+
+#dateCardMiddle {
+  position: relative;
+  right: 0.6em;
+  top: 0.8em;
+}
+
+#dateCardThird {
+  position: relative;
+  top: 2em;
+  right: 1em;
+}
+
+.fourthPage button {
+  background-color: #0a76d9;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 18rem;
+  border: none;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.7em;
+  font-weight: 700;
+  position: relative;
+  transition: 0.6s;
+}
+
+.fourthPage button:hover {
+  background-color: #141e39;
+  cursor: pointer;
+  border: 1px solid #222;
+}
+
+#fifthPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #0a76d9;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.178);
+  padding: 0;
+}
+
+#fifthPage a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+#leftContentFiP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1em;
+  bottom: 4em;
+  align-items: center;
+  padding: 3em;
+}
+
+#topContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30em;
+  height: 10em;
+  text-align: center;
+  color: #f1f1f1;
+  border-radius: 1em;
+  border: 1px solid black;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+#bottomContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30em;
+  height: 20em;
+  margin: 2em;
+  font-size: 1.5em;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #f1f1f1;
+  border-radius: 1em;
+}
+
+#bottomContainer h3 {
+  text-align: left;
+  padding-left: 1.7em;
+  padding-top: 1em;
+}
+
+#firstText {
+  text-align: left;
+  padding-left: 2em;
+  color: #0a76d9;
+}
+
+#secondText {
+  text-align: left;
+  padding-left: 2.5em;
+  margin-bottom: 1em;
+  padding-top: 1.5em;
+  line-height: 1.5em;
+  color: #0a76d9;
+}
+
+#leftContentFiP button {
+  background-color: #141e39;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 22rem;
+  border: none;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.7em;
+  font-weight: 700;
+  position: relative;
+  transition: 0.6s;
+}
+
+#leftContentFiP button:hover {
+  background-color: #61b3fb;
+  cursor: pointer;
+  border: 1px solid #222;
+}
+
+#estrelinhasFiP {
+  position: relative;
+  right: 18em;
+  top: 7em;
+}
+
+#closeFiP {
+  position: relative;
+  left: 24em;
+  top: 2em;
+}
+
+#basketCleaning {
+  width: 40em;
+  height: 40em;
+}
+
